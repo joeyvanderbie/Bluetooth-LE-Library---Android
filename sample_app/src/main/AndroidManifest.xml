@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest
-    package="uk.co.alt236.btlescan"
+    package="org.hva.createit.btlescan"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.BLUETOOTH"/>
@@ -16,7 +16,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
         <activity
-            android:name="uk.co.alt236.btlescan.activities.MainActivity"
+            android:name="org.hva.createit.btlescan.activities.MainActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -25,13 +25,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="uk.co.alt236.btlescan.activities.DeviceDetailsActivity"
+            android:name="org.hva.createit.btlescan.activities.DeviceDetailsActivity"
             android:label="@string/app_name">
         </activity>
-        <activity android:name="uk.co.alt236.btlescan.activities.DeviceControlActivity"/>
+        <activity android:name="org.hva.createit.btlescan.activities.DeviceControlActivity"/>
 
         <service
-            android:name="uk.co.alt236.btlescan.services.BluetoothLeService"
+            android:name="org.hva.createit.btlescan.services.BluetoothLeService"
             android:enabled="true"/>
     </application>
 

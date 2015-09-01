@@ -11,7 +11,7 @@ It also offers:
 
 This will only work on devices with Android 4.3 (API Level 18) and above.
 
-Sample app available on the [Play Store](https://play.google.com/store/apps/details?id=uk.co.alt236.btlescan) 
+Sample app available on the [Play Store](https://play.google.com/store/apps/details?id=org.hva.createit.btlescan)
 
 ## Including the Library in Your Project
 

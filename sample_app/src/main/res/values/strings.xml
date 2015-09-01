@@ -2,7 +2,7 @@
 <resources>
 
     <string name="action_settings">Settings</string>
-    <string name="app_name">Bluetooth LE Scanner</string>
+    <string name="app_name">BAMBEA</string>
     <string name="connected">Connected</string>
     <string name="disconnected">Disconnected</string>
     <string name="invalid_device_data">Invalid Device Data!</string>
@@ -37,9 +37,12 @@
     <string name="exporter_email_device_list_picker_text">Please select your email client:</string>
 
     <!-- Labels -->
-    <string name="about_dialog_text">This is a sample application using the Bluetooth LE Library.\n\nGithub: https://github.com/alt236/Bluetooth-LE-Library---Android\n\nCopyright: Alexandros Schillings</string>
+    <string name="about_dialog_text">The BAMBEA app scans for Bluetooth LE devices.\n
+        The app is based on the Bluetooth LE library by Alexandros Schillings.\n\n
+        You can find the code on:\n
+        Github: https://github.com/joeyvanderbie/Bluetooth-LE-Library---Android</string>
     <string name="header_device_info">Device Info</string>
-    <string name="header_ibeacon_data">iBeacon Data</string>
+    <string name="header_ibeacon_data">Beacon Data</string>
     <string name="header_raw_ad_records">Raw Ad Records</string>
     <string name="header_rssi_info">RSSI Info</string>
     <string name="header_scan_record">Scan Record</string>
