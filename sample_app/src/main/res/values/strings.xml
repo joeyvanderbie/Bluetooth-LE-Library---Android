@@ -39,8 +39,8 @@
     <!-- Labels -->
     <string name="about_dialog_text">The BAMBEA app scans for Bluetooth LE devices.\n
         The app is based on the Bluetooth LE library by Alexandros Schillings.\n\n
-        You can find the code on:\n
-        Github: https://github.com/joeyvanderbie/Bluetooth-LE-Library---Android</string>
+        You can find the code at:\n
+        https://gitlab.dmci.hva.nl/biejh/bambea/</string>
     <string name="header_device_info">Device Info</string>
     <string name="header_ibeacon_data">Beacon Data</string>
     <string name="header_raw_ad_records">Raw Ad Records</string>
