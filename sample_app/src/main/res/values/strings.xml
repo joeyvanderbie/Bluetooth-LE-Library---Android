@@ -2,7 +2,8 @@
 <resources>
 
     <string name="action_settings">Settings</string>
-    <string name="app_name">BAMBEA</string>
+    <string name="app_name">BAMBEA Scanner</string>
+    <string name="app_name_logger">BAMBEA Logger</string>
     <string name="connected">Connected</string>
     <string name="disconnected">Disconnected</string>
     <string name="invalid_device_data">Invalid Device Data!</string>
@@ -29,6 +30,9 @@
     <string name="menu_scan">Scan</string>
     <string name="menu_stop">Stop</string>
     <string name="menu_share">Share</string>
+    <string name="menu_logger">Logger</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_scanner">Scanner</string>
 
     <!-- Export Email Strings -->
     <string name="exporter_email_device_list_subject">Bluetooth LE Scan Results (%s)</string>
@@ -75,4 +79,11 @@
     <string name="label_uuid">UUID:</string>
     <string name="label_updated">Updated:</string>
     <string name="label_decriptor">Descriptor:</string>
+
+    <string name="click_the_button_to_start_or_stop_scanning">Click the button to start or stop scanning.</string>
+    <string name="Settings">Settings</string>
+    <string name="action_listfiles">List files</string>
+    <string name="action_deletefiles">Delete Files</string>
+    <string name="action_transferfiles">Transfer Files</string>
+
 </resources>

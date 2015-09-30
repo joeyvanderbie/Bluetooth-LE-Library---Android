@@ -1,2 +1,4 @@
+include ':googleplayservices_lib'
 include ':library'
 include ':sample_app'
+

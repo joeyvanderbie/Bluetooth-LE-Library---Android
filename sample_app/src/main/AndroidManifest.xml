@@ -1,26 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest
     package="org.hva.createit.btlescan"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:installLocation="preferExternal">
 
     <uses-permission android:name="android.permission.BLUETOOTH"/>
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
 
     <uses-feature
         android:name="android.hardware.bluetooth_le"
         android:required="false"/>
 
+
     <application
+        android:name="org.hva.createit.btlescan.logger.BeaconScannerApp"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme">
+        android:theme="@style/BAMBEAAppTheme">
+
+        <meta-data android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name="org.hva.createit.btlescan.logger.ScanActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name_logger">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="org.hva.createit.btlescan.logger.AppPreferenceActivity"
+            android:label="@string/Settings">
+            <intent-filter>
+                <action android:name="org.hva.createit.btlescan.logger.AppPreferenceActivity"/>
+                <category android:name="ANDROID.INTENT.CATEGORY.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name="org.hva.createit.btlescan.logger.FileHandlerActivity"
+            android:label="@string/action_listfiles"
+            android:parentActivityName="org.hva.createit.btlescan.logger.ScanActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.hva.createit.btlescan.logger.ScanActivity" />
+        </activity>
+
         <activity
             android:name="org.hva.createit.btlescan.activities.MainActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
-
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>

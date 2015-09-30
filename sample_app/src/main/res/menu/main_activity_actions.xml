@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- List Files - will appear as an action button -->
+    <item android:id="@+id/action_listfiles"
+          android:title="@string/action_listfiles"
+        android:orderInCategory="1"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_scanner"
+        android:orderInCategory="102"
+        android:title="@string/menu_scanner"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/Settings"
+        android:orderInCategory="104"
+          android:title="@string/Settings"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/menu_about"
+        android:orderInCategory="105"
+        android:title="@string/menu_about"
+        app:showAsAction="never"/>
+</menu>

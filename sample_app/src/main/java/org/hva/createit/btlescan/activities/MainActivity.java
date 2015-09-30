@@ -23,6 +23,9 @@ import uk.co.alt236.bluetoothlelib.device.BluetoothLeDevice;
 import org.hva.createit.btlescan.R;
 import org.hva.createit.btlescan.adapters.LeDeviceListAdapter;
 import org.hva.createit.btlescan.containers.BluetoothLeDeviceStore;
+import org.hva.createit.btlescan.logger.AppPreferenceActivity;
+import org.hva.createit.btlescan.logger.FileHandlerActivity;
+import org.hva.createit.btlescan.logger.ScanActivity;
 import org.hva.createit.btlescan.util.BluetoothLeScanner;
 import org.hva.createit.btlescan.util.BluetoothUtils;
 import uk.co.alt236.easycursor.objectcursor.EasyObjectCursor;
@@ -149,6 +152,16 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 break;
             case R.id.menu_share:
                 mDeviceStore.shareDataAsEmail(this);
+                break;
+            case R.id.menu_logger:
+                Intent scan = new Intent(this, ScanActivity.class);
+                startActivity(scan);
+                break;
+            case R.id.action_listfiles:
+                // Launch list files activity
+                Intent fhi = new Intent(this, FileHandlerActivity.class);
+                startActivity(fhi);
+                break;
         }
         return true;
     }
