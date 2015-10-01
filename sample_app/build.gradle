@@ -1,9 +1,9 @@
 apply plugin: 'com.android.application'
 
 final int versionMajor = 1
-final int versionMinor = 1
+final int versionMinor = 2
 final int versionPatch = 0
-final int androidVersionCode = 6
+final int androidVersionCode = 7
 
 final int targetSdk = rootProject.targetSdkVersion;
 final int minSdkRed = rootProject.minSdkVersion;
